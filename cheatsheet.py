@@ -79,3 +79,15 @@ stringIndex = crazyString.lower().find(subString)
 print(stringIndex)
 
  # str.split()
+
+someValues = "Laconia Gilford Belmont"
+listOfValues = someValues.split()
+print(listOfValues[1])
+#here is a more complex example
+keyValuePairs = "Bill: Laconia, Jane: Gilford, Tom: Belmont"
+listOfPairs = keyValuePairs.split(", ")
+count = 0
+while count < len(listOfPairs):
+    fname, town = listOfPairs[count].split(": ")
+    print("first name is: " + fname + "\n town is: " + town)
+    count += 1
